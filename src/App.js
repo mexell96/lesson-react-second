@@ -26,7 +26,7 @@ class App extends React.Component {
     }
   }
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(this.state, nextState);
+    //console.log(this.state, nextState);
     if (this.state.users.length === nextState.users.length) {
       return false;
     }
@@ -42,7 +42,6 @@ class App extends React.Component {
   deleteHandler(index) {
     const users = this.state.users.concat()
     users.splice(index, 1)
-
     this.setState({users})
   }
 
