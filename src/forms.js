@@ -8,6 +8,7 @@ class App extends React.Component {
       Description: "",
       Link: "",
       Query: "",
+      value: "Link",
     };
   }
 
@@ -63,6 +64,14 @@ class App extends React.Component {
           value={this.state.Query}
           onChange={this.handleChange}
         ></input>
+
+        <select value={this.state.value} onChange={this.handleChange}>
+          <option value="ID">ID</option>
+          <option value="Description">Description</option>
+          <option value="Link">Link</option>
+          <option value="Query">Query</option>
+        </select>
+
       </>
     );
   }

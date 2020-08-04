@@ -19,3 +19,8 @@ li {
   border: 5px solid black;
   list-style-type: none;
 }
+li > li {
+  margin: 0px;
+  border: 1px solid white;
+  list-style-type: none;
+}
